@@ -27,7 +27,7 @@ def get_stocks():
     stocks_elements['Code'] = stocks_elements['Code'].astype(str) + ".KLSE"  # Add suffix to stock codes
     symbol_list = stocks_elements['Code'].tolist()  # List of stock symbols
     name_list = stocks_elements['Name'].tolist()  # List of stock names
-    return symbol_list[:1], name_list[:1]  # Limiting to first 2 stocks for testing
+    return symbol_list[:2], name_list[:2]  # Limiting to first 2 stocks for testing
 
 def get_warrant_data(symbols, name):
     access_key = "67413dc0158284.44313462"  # Replace with your access key from the external stock API
