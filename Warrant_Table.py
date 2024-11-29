@@ -110,4 +110,4 @@ def fetch_data():
 
 if __name__ == '__main__':
     socketio.start_background_task(fetch_data)  # Run fetch_data in the background as a task
-    socketio.run(app, host='0.0.0.0', port=5000)
+    socketio.run(app, host='0.0.0.0', port=5000,allow_unsafe_werkzeug=True)
